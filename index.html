@@ -4,19 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet" >
-    <style>
-            .Regular {           
-                padding: 50px;     
-                vertical-align:text-top;                
-                font-family: "Segoe UI SemiLight","sans-serif";                               
-                text-decoration:none;}
-    </style>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" >       
   </head>
   <body>
     
-    
-    <p class="text-primary Regular">Hello, world!</p>
+    <div class="d-grid gap-2 col-6 mx-auto p-lg-5 ">
+      <h1 class="mx-auto fw-bolder ">Quote of the Day</h1>
+      <h5 clsss="mx-auto ">Press the button below to recieve a random quote!</h5>
+      <button class="btn btn-primary mx-auto" type="button" onclick="displayQuote()">New Quote</button>
+      <p class="text-primary quote text-xxl-center align-content-center" id="quote">Hello, world!</p>
+      <p class="text-primary quote text-xxl-center ms-auto" id="author">Hello, world!</p>
+    </div>
     <script src="./js/bootstrap.bundle.min.js" ></script>
     <script src="./js/index.js" ></script>
 
