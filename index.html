@@ -16,8 +16,10 @@
             <h1>Smart Login System</h1>
           </div>
           <div class="content">
-            <input type="email" id="emailLoginInput" class="form-control text-white mb-3 bg-transparent" placeholder="Enter your email">
+            <input type="email" id="emailLoginInput" class="form-control text-success-emphasis mb-3 bg-transparent" placeholder="Enter your email">
+            <p class="text-danger text-start invisible" id="emailErrorMsg">Email must be valid example@gmail.com.</p>
             <input type="password" id="passwordLoginInput" class="form-control text-success-emphasis mb-4 bg-transparent" placeholder="Enter your password">
+            <p class="text-danger text-start invisible" id="passwordErrorMsg">Password must be at least 6 characters.</p>
           </div>
           <div class="submit-btn">
             <button id="loginBtn" class="btn btn-primary text-white w-50 d-block m-auto">Login</button>
@@ -31,8 +33,8 @@
     </section>
     
   
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/bootstrap.bundle.min.js" ></script>
-    <script src="./js/index.js" ></script>
+    <script src="./js/login.js" ></script>
   </body>
 </html>
